@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Comparison</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 font-sans p-4">
+
+    <div class="max-w-3xl mx-auto">
+        <h1 class="text-3xl font-bold mb-4 text-center">Product Comparison Tool</h1>
+
+        <!-- Search -->
+        <div class="flex gap-2 mb-6">
+            <input id="searchInput" type="text" placeholder="Compare phones..."
+                class="flex-1 p-3 border border-gray-300 rounded-xl">
+            <button onclick="compareProducts()"
+                class="bg-blue-600 text-white px-4 py-2 rounded-xl hover:bg-blue-700">Compare</button>
+        </div>
+
+        <!-- Comparison Result -->
+        <div id="comparisonResult" class="hidden bg-white p-6 rounded-2xl shadow">
+            <h2 class="text-xl font-semibold mb-4">Comparison Results</h2>
+
+            <div class="grid grid-cols-2 gap-6">
+                <!-- Product A -->
+                <div class="border p-4 rounded-xl">
+                    <h3 class="font-bold text-lg">Infinix Zero 5G</h3>
+                    <p class="text-sm">6.78" | 8GB RAM | 128GB | 5000mAh</p>
+                    <p class="mt-2 text-green-600 font-semibold">Ksh 28,999 (Jumia)</p>
+                    <a href="#" class="text-blue-500 underline text-sm mt-1 block">Buy on Jumia</a>
+                </div>
+
+                <!-- Product B -->
+                <div class="border p-4 rounded-xl">
+                    <h3 class="font-bold text-lg">Samsung Galaxy A24</h3>
+                    <p class="text-sm">6.5" | 6GB RAM | 128GB | 5000mAh</p>
+                    <p class="mt-2 text-green-600 font-semibold">Ksh 30,499 (Kilimall)</p>
+                    <a href="#" class="text-blue-500 underline text-sm mt-1 block">Buy on Kilimall</a>
+                </div>
+            </div>
+
+            <!-- AI Summary -->
+            <div class="mt-6">
+                <h4 class="font-medium text-gray-800 mb-2">AI Summary</h4>
+                <p class="text-sm text-gray-700">
+                    The Infinix Zero 5G offers more RAM at a lower price, making it great for performance-focused users.
+                    However, Samsung's brand reliability and AMOLED screen may justify the extra cost for some buyers.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js">
+
+    </script>
+</body>
+
+</html>
